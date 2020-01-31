@@ -1,0 +1,46 @@
+<h3>Home - Country Details</h3>
+
+
+<div class="container" style="margin-top: 150px;" *ngIf="Details != ''">
+  <div class="row">
+    <div class="col-sm-6 offset-3">
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+            <th>Country Name</th>
+            <td>{{Details?.name}}</td>
+          </tr>
+          <tr>
+            <th>Capital</th>
+            <td>{{Details?.capital}}</td>
+          </tr>
+          <tr>
+            <th>Region</th>
+            <td>{{Details?.region}}</td>
+          </tr>
+          <tr>
+            <th>Sub Region</th>
+            <td>{{Details?.subregion}}</td>
+          </tr>
+          <tr>
+            <th>Population</th>
+            <td>{{Details?.population}}</td>
+          </tr>
+          <tr>
+            <th>Area</th>
+            <td>{{Details?.area}}</td>
+          </tr>
+          <tr>
+            <th>Alpha3Code</th>
+            <td>{{Details?.alpha3Code}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<div class="text-center" style="margin-top: 150px;" *ngIf="Details == ''">
+  <h4>Please select a country</h4>
+</div>
